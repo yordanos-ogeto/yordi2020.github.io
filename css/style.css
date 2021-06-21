@@ -1,0 +1,25 @@
+/* * {
+  margin: 0;
+  padding: 0;
+} */
+
+.headerWrapper img {
+  height: 150px;
+  width: 100px;
+}
+.headerWrapper {
+  /* background-color: cornsilk; */
+  margin-bottom: 30px;
+}
+.myName {
+  margin-bottom: 20px;
+  color: black;
+  font-size: medium;
+  font-family: "Times New Roman", Times, serif;
+}
+.footerWrapper {
+  margin-top: 20px;
+}
+.headerWrapper ul li a {
+  padding-left: 40px;
+}
