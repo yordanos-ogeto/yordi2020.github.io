@@ -6,7 +6,7 @@ function myFunctionTest(expected, found) {
     return "TEST FAILED.  Expected " + expected + " found " + found;
   }
 }
-
+// Question 1
 /* max returns the maximum of 2 arguments */
 function max(a, b) {
   if (a > b) {
@@ -18,6 +18,8 @@ function max(a, b) {
 console.log(
   "Expected output of max(20,10) is 20  " + myFunctionTest(20, max(20, 10))
 );
+
+// Question 2
 
 /* max3 takes 3 numbers as arguments and returns the largest */
 function maxOfThree(a, b, c) {
