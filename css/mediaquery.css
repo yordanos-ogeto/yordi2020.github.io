@@ -55,7 +55,7 @@
     "c1 c2 c2 c3"
     "footer footer footer footer";
 }
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 600px) {
   .grid_container {
     display: grid;
     grid-template-areas:
