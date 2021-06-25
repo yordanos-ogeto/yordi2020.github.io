@@ -1,10 +1,68 @@
 .header {
   grid-area: header;
+  background-color: lightskyblue;
+  text-align: center;
+  height: 70px;
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 25px;
 }
-
+.menu {
+  grid-area: menus;
+  background-color: darkslategray;
+  text-align: center;
+  display: flex;
+  height: 50px;
+}
+.menu > div {
+  border-right: solid black;
+  color: white;
+  width: 100px;
+  text-align: center;
+  padding-top: 15px;
+}
+.c1,
+.c2,
+.c3 {
+  height: 500px;
+  padding-left: 10px;
+}
+.c1 {
+  grid-area: c1;
+  background-color: grey;
+}
+.c2 {
+  grid-area: c2;
+  background-color: darkgray;
+}
+.c3 {
+  grid-area: c3;
+  background-color: lightgrey;
+}
+.footer {
+  grid-area: footer;
+  background-color: darkslategray;
+  text-align: center;
+  color: white;
+  height: 50px;
+  padding-top: 25px;
+}
 .grid_container {
   display: grid;
   grid-template-areas:
-    "header header header "
-    "FulName FulName FulName";
+    "header header header header"
+    "menus menus menus menus"
+    "c1 c2 c2 c3"
+    "footer footer footer footer";
+}
+@media screen and (max-width: 600px) {
+  .grid_container {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "menus menus menus menus"
+      "c1 c1 c3 c3"
+      "c2 c2 c2 c2"
+      "footer footer footer footer";
+  }
 }
