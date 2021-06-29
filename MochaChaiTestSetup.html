@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- saved from url=(0115)https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html -->
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Mocha / Chai Test Setup</title>
+
+    <link rel="stylesheet" href="MochaChaiTestSetupfiles/mocha.css" />
+    <script src="MochaChaiTestSetupfiles/myCode.js.download"></script>
+    <script src="MochaChaiTestSetupfiles/myTest.js.download"></script>
+    <script>
+      // initialize mocha
+      mocha.setup("bdd");
+      // chai has a lot of stuff, let's make assert global
+      let assert = chai.assert;
+    </script>
+
+    <script src="MochaChaiTestSetupfiles/myCode.js.download"></script>
+    <script src="MochaChaiTestSetupfiles/myTest.js.download
+    "></script>
+  </head>
+
+  <body data-new-gr-c-s-check-loaded="14.1018.0" data-gr-ext-installed="">
+    <div id="mocha">
+      <ul id="mocha-stats">
+        <li class="progress"><canvas width="50" height="50"></canvas></li>
+        <li class="passes">
+          <a href="javascript:void(0);">passes:</a> <em>7</em>
+        </li>
+        <li class="failures">
+          <a href="javascript:void(0);">failures:</a> <em>0</em>
+        </li>
+        <li class="duration">duration: <em>0.06</em>s</li>
+      </ul>
+      <ul id="mocha-report">
+        <li class="suite">
+          <h1>
+            <a
+              href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow"
+              >pow</a
+            >
+          </h1>
+          <ul>
+            <li class="test pass fast">
+              <h2>
+                for negative n the result is NaN<span class="duration"
+                  >0ms</span
+                >
+                <a
+                  href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20for%20negative%20n%20the%20result%20is%20NaN"
+                  class="replay"
+                  >‣</a
+                >
+              </h2>
+              <pre
+                style="display: none"
+              ><code>assert.isNaN(pow(<span class="number">2</span>, -<span class="number">1</span>));</code></pre>
+            </li>
+            <li class="test pass fast">
+              <h2>
+                for non-integer n the result is NaN<span class="duration"
+                  >0ms</span
+                >
+                <a
+                  href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20for%20non-integer%20n%20the%20result%20is%20NaN"
+                  class="replay"
+                  >‣</a
+                >
+              </h2>
+              <pre
+                style="display: none"
+              ><code>assert.isNaN(pow(<span class="number">2</span>, <span class="number"><span class="number">1</span>.<span class="number">5</span></span>));</code></pre>
+            </li>
+            <li class="suite">
+              <h1>
+                <a
+                  href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203"
+                  >raises x to power 3</a
+                >
+              </h1>
+              <ul>
+                <li class="test pass fast">
+                  <h2>
+                    1 in the power 3 is 1<span class="duration">0ms</span>
+                    <a
+                      href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203%201%20in%20the%20power%203%20is%201"
+                      class="replay"
+                      >‣</a
+                    >
+                  </h2>
+                  <pre
+                    style="display: none"
+                  ><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre>
+                </li>
+                <li class="test pass fast">
+                  <h2>
+                    2 in the power 3 is 8<span class="duration">0ms</span>
+                    <a
+                      href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203%202%20in%20the%20power%203%20is%208"
+                      class="replay"
+                      >‣</a
+                    >
+                  </h2>
+                  <pre
+                    style="display: none"
+                  ><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre>
+                </li>
+                <li class="test pass fast">
+                  <h2>
+                    3 in the power 3 is 27<span class="duration">0ms</span>
+                    <a
+                      href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203%203%20in%20the%20power%203%20is%2027"
+                      class="replay"
+                      >‣</a
+                    >
+                  </h2>
+                  <pre
+                    style="display: none"
+                  ><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre>
+                </li>
+                <li class="test pass fast">
+                  <h2>
+                    4 in the power 3 is 64<span class="duration">0ms</span>
+                    <a
+                      href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203%204%20in%20the%20power%203%20is%2064"
+                      class="replay"
+                      >‣</a
+                    >
+                  </h2>
+                  <pre
+                    style="display: none"
+                  ><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre>
+                </li>
+                <li class="test pass fast">
+                  <h2>
+                    5 in the power 3 is 125<span class="duration">0ms</span>
+                    <a
+                      href="https://sakai.cs.miu.edu/access/content/group/937378a9-0b22-45f6-8986-20afa94b2d3a/Lecture%20Slides/W1D6/index.html?grep=pow%20raises%20x%20to%20power%203%205%20in%20the%20power%203%20is%20125"
+                      class="replay"
+                      >‣</a
+                    >
+                  </h2>
+                  <pre
+                    style="display: none"
+                  ><code>assert.equal(pow(x, <span class="number">3</span>), expected);</code></pre>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script>
+      mocha.run();
+    </script>
+  </body>
+</html>
