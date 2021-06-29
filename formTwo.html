@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/formTwo.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <div id="left">
+        <span id="title">MUM Golden Market ::: SRM System</span>
+        <span id="product">Product</span>
+        <span id="supplier">Supplier</span>
+      </div>
+      <div id="right">
+        <span>Hello!</span>
+        <button>Sign Out</button>
+      </div>
+    </div>
+    <div class="allContent">
+      <div class="form-page">
+        <h1>New Product Form</h1>
+
+        <form>
+          <div class="inputAndLable">
+            <label>Product Number</label>
+            <input type="text" name="product-number" pattern="[0-9]" />
+          </div>
+
+          <div class="inputAndLable">
+            <label>Quantity in stock</label>
+            <input type="text" name="Quantity" pattern="[0-9]" />
+          </div>
+
+          <div class="inputAndLable">
+            <label>Name</label>
+            <input type="text" name="name" pattern="[a-zA-Z]{2,}" />
+          </div>
+
+          <div class="inputAndLable">
+            <label>Supplier:</label> <br />
+            <select id="sele">
+              <option id="opt" selected>Select a supplier</option>
+            </select>
+          </div>
+
+          <div class="inputAndLable">
+            <label>Unit Price</label>
+            <input type="number" step="0.1" value="0.0" name="unitprice" />
+          </div>
+
+          <div class="inputAndLable">
+            <label>Date supplied</label> <br />
+            <input type="date" name="supplydate" />
+            <label class="note">Enter a valid Date</label> <br />
+          </div>
+
+          <div class="button-box">
+            <button id="reset">Reset</button>
+            <button id="cancel">Cancel</button>
+            <button id="add">Add Product</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

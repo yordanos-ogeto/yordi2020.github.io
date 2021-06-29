@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.web-form {
+  background-color: whitesmoke;
+  padding: 60px;
+}
+.web-form > form {
+  display: grid;
+  grid-template-columns: auto;
+}
+.topic {
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+.text-box {
+  font-size: 15px;
+  padding: 5px;
+}
+.note {
+  color: #aaa;
+  font-size: 13px;
+  margin-bottom: 10px;
+  padding: 3px;
+}
+.check-box {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: lightskyblue;
+  width: 100px;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+}
+#url {
+  margin-top: 18px;
+}
