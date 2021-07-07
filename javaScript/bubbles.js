@@ -33,7 +33,7 @@ function makeCircles(width, circleCount) {
 
   let circles = [];
   for (let i = 0; i < circleCount; i++) {
-    let position = generateRandomInteger(5, 100);
+    let position = generateRandomInteger();
     let bgColor = bgColors[Math.floor(Math.random() * bgColors.length)];
 
     let circle = $("<div>", {
