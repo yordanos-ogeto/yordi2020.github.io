@@ -11,10 +11,6 @@
   gap: 10px;
   flex-direction: column;
 }
-.bubbles {
-  position: absolute;
-  top: 50%;
-}
 .circle {
   border-radius: 50%;
   width: 50px;
