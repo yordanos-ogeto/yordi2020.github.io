@@ -1,0 +1,38 @@
+.container_wrapper {
+  margin-top: 400px;
+  position: relative;
+}
+.wrapper-box {
+  position: absolute;
+  left: 50px;
+}
+#fields {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.bubbles {
+  position: absolute;
+  top: 50%;
+}
+.circle {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 200px;
+  left: 300px;
+  background-color: #ccccff;
+}
+#circles {
+  height: 200px;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+button {
+  background-color: darkcyan;
+  width: 80px;
+}

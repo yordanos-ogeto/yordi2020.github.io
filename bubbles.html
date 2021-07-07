@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Circles</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="javaScript/bubbles.js"></script>
+    <link href="css/bubbles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container_wrapper">
+      <div id="circles"></div>
+      <div class="wrapper-box">
+        <div id="fields">
+          <label>Width</label>
+          <input
+            id="width"
+            type="number"
+            name="width"
+            placeholder="radius in px"
+          />
+          <label>Growth Amount</label>
+          <input
+            id="growth"
+            type="number"
+            name="growthamount"
+            placeholder="growth in px"
+          />
+          <label>Growth Rate</label>
+          <input
+            id="rate"
+            type="number"
+            name="growRate"
+            placeholder="interval in ms"
+          />
+          <label>Number Circles</label>
+          <input
+            id="circle"
+            type="number"
+            name="circle"
+            placeholder="number of circles"
+          />
+          <button id="start">Start</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
