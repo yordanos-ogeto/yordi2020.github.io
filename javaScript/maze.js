@@ -3,12 +3,15 @@ $(function () {
   $("#maze .boundary").mouseover(red);
   $("#end").mouseover(end);
   $("#start").click(reset);
+  $("#maze").mouseleave(function () {
+    red();
+  });
 });
 
 function red() {
   win = false;
   $(".boundary").addClass("youlose");
-  $("#status").text("You lose!").css("color", "red");
+  $("#status").text("You loss! :]").css("color", "red");
 }
 
 function reset() {
