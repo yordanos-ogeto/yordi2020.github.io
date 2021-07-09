@@ -3,9 +3,7 @@ $(function () {
   $("#maze .boundary").mouseover(red);
   $("#end").mouseover(end);
   $("#start").click(reset);
-  $("#maze").mouseleave(function () {
-    red();
-  });
+  $("#maze").mouseleave(leaveMouse);
 });
 
 function red() {
@@ -20,12 +18,12 @@ function reset() {
   $(".boundary").each(function () {
     $(this).removeClass("youlose");
   });
-
-  $("#maze .boundary").on("mouseover", red);
-  $("#end").on("mouseover", end);
 }
 
 function end() {
-  let endGame = win == true ? "You win! :]" : "you lost again! :]";
+  let endGame = win == true ? "You win! :]" : "you lost again! :";
   $("#status").text(endGame);
+}
+function leaveMouse() {
+  red();
 }
