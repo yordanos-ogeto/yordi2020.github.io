@@ -7,6 +7,6 @@ app.get("/", (req, res) => {
     name = "person";
   }
   if (!age) age = 0;
-  res.send(`Welcome ${name}, at this age of ${age}`);
+  res.send("Welcome" + name + "at this age of" + age);
 });
 app.listen(3000);

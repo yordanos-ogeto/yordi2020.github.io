@@ -2,6 +2,7 @@ const { response } = require("express");
 const express = require("express");
 const app = express();
 app.use(express.urlencoded({ extended: false }));
+app.use("/css", express.static(path.join(__dirname, "css")));
 
 app.get("/", (req, res) => {
   const date = new Date();
@@ -10,7 +11,8 @@ app.get("/", (req, res) => {
     "!DOCTYPE html" +
     "<html>" +
     "<head>" +
-    "<title>ExpressAssignment</title>"`<link href = "${
+    "<title>ExpressAssignment</title>" +
+    `<link href = "${
       hour >= 6 && hour <= 18 ? "/css/day.css" : "/css/night.css"
     }" rel = "stylesheet">` +
     "</head>" +
@@ -25,5 +27,4 @@ app.get("/", (req, res) => {
     "<html>";
   res.send(response);
 });
-app.use("/css", express.static(path.join(__dirname, "css")));
 app.listen(3000);
