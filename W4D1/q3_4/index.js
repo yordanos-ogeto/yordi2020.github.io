@@ -7,7 +7,7 @@ app.use(express.urlencoded());
 app.use("/css", express.static(path.join(__dirname, "css")));
 app.use(session({ secret: "my secret" }));
 
-app.get("/car", (req, res) => {
+app.get("/fruit", (req, res) => {
   let product = {
     name: "Fruit",
     price: 100,
