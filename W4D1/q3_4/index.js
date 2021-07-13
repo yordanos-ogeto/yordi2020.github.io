@@ -5,7 +5,7 @@ let app = express();
 app.set("view engine", "ejs");
 app.use(express.urlencoded());
 app.use("/css", express.static(path.join(__dirname, "css")));
-app.use(session({ secret: "my secret" }));
+app.use(session({ secret: "my session" }));
 
 app.get("/fruit", (req, res) => {
   let product = {
