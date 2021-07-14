@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../css/product.css" rel="stylesheet" />
+    <script src="../js/product.js"></script>
+    <title>Product1</title>
+  </head>
+  <style>
+    h1 {
+      padding-left: 70px;
+      color: palevioletred;
+    }
+    body li {
+      color: darkgreen;
+    }
+  </style>
+  <body>
+    <form id="productForm" method="POST" action="/addToCart">
+      <div>
+        <ul>
+          <li>Id : <%= id %></li>
+          <li>Name:<%= name %></li>
+          <li>Price:<%= price %></li>
+          <li>Description:<%= description %></li>
+        </ul>
+      </div>
+      <input type="hidden" name="name" value="<%= name %>" />
+      <input type="hidden" name="price" value="<%= price%>" />
+      <input type="submit" value="add to cart" />
+    </form>
+    <div id="msg">Data inserted successfully</div>
+    <a id="linktocart" href="/shoppingcart">see cart</a>
+  </body>
+</html>
