@@ -17,6 +17,7 @@ $(function () {
     $.post("/addToCart", { price: price, name: name })
       .done(function (data) {
         showSuccessMsg();
+        33;
         setTimeout(hideSuccessMsg, 3000);
 
         const res = JSON.parse(data);

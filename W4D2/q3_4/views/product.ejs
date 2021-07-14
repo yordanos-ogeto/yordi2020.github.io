@@ -27,11 +27,11 @@
           <li>Description:<%= description %></li>
         </ul>
       </div>
-      <input type="hidden" name="name" value="<%= name %>" />
-      <input type="hidden" name="price" value="<%= price%>" />
-      <input type="submit" value="add to cart" />
+      <input type="hidden" name="name" value="<%= name %>" id="nam" />
+      <input type="hidden" name="price" value="<%= price%>" id="pr" />
+      <input type="submit" value="add to cart" id="subttn" />
     </form>
-    <div id="msg">Data inserted successfully</div>
-    <a id="linktocart" href="/shoppingcart">see cart</a>
+    <div id="msg">cart is added successfully</div>
+    <a id="linktocart" href="/cart">see cart</a>
   </body>
 </html>

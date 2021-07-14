@@ -54,6 +54,7 @@ app.post("/addToCart", (req, res) => {
   }
   let cnt = res.session.cart[name] ? res.session.cart[name].count : 0;
   res.session.cart[name] = { count: cnt + 1, value: product };
+  // res.send(301, Object.keys(req.session.cart).length);
   res.redirect("/cart");
 });
 
